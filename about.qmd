@@ -3,28 +3,24 @@ title: "About Me"
 sidebar: false 
 ---
 
-# Education
+Hi! I'm Yahya Eren Kaya. Welcome to my digital workspace! 🚀
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+**The Professional Side 💼**
 
-# Work Experience
+-   🎓 4th-year Industrial Engineering student at Hacettepe University.
 
-## Employements
+-   💻 Software Process Management Intern at Ibtech.
 
-1.  Firm xxx, position xx, year xxx
+-   🎯 Future Goal: Optimizing systems in the Energy and Finance sectors.
 
-2.  Firm yyy, position yyy, year yyy
+**The Fun Side 🎮**
 
-## Internships
+-   🦁 Passionate Galatasaray supporter.
 
-1.  Firm aaa, position xx, year xxx
+-   🏎️ Huge Formula 1 enthusiast.
 
-2.  Firm bbb, position yyy, year yyy
+-   🏙️ Building massive empires in ANNO 1800.
 
-# Projects
+-   🔫 Casually killing people in CS2 (virtually, of course!).
 
-# Competencies
-
-R, Quarto, Git, Python
-
-# Hobbies
+-   📉 Currently fighting with R codes for this EMU430 lab!
