@@ -2,14 +2,67 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
+
+**Video:** Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir
+
+**Summary:** We saw how analytical categories are divided and which courses fall into which categories. We also saw what we need to pay attention to in the long term, especially when writing a thesis, what the KPI is, and the importance of problem definition.
+
+**Q1- What is the difference between Out of the box and custom made software?**
+
+**Answer:** Out of the box software provides the same standard product to everyone, while custom made software is built specifically for a single customer.
+
+**Q2- Which of the following uses Machine Learning as a core component?**
+
+a) Descriptive Analytics
+
+b) Diagnostic Analytics
+
+c) Predictive Analytics
+
+d) Prescriptive Analytics
+
+**Answer:** C
 
 ```{r}
-1 + 1
+library(dslabs)
+data("polls_us_election_2016")
+
+my_first <- "Yahya Eren"
+my_birth_year <- 2002
+
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+
+if (k %% 2 == 0) {
+  print(head(polls_us_election_2016, k))
+} else {
+  print(tail(polls_us_election_2016, k))
+}
+
+# Tüm veri setindeki toplam NA (eksik veri) sayısını hesaplayıp yazdırır
+print(sum(is.na(polls_us_election_2016)))
+
+# Sütun bazında NA sayılarını toplayıp büyükten küçüğe sıralar ve en çok NA içeren ilk 8 sütunu yazdırır
+print(head(sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE), 8))
+
+new_data <- polls_us_election_2016
+
+for (col in names(new_data)) {
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+  } else if (is.character(new_data[[col]]) | is.factor(new_data[[col]])) {
+    new_data[[col]] <- as.character(new_data[[col]])
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+  }
+}
+
+if (k %% 2 == 0) {
+  print(head(new_data, k))
+} else {
+  print(tail(new_data, k))
+}
+
+print(sum(is.na(new_data)))
+
+print(anyNA(new_data)) 
 ```
 
-My first assignment has two parts.
-
-## (a)
-
-## (b)
