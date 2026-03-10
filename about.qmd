@@ -5,6 +5,8 @@ sidebar: false
 
 Hi! I'm Yahya Eren Kaya. Welcome to my digital workspace! 🚀
 
+[📄 Güncel CV](Cv.pdf)
+
 **The Professional Side 💼**
 
 -   🎓 4th-year Industrial Engineering student at Hacettepe University.
