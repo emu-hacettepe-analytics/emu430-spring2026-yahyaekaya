@@ -1,5 +1,7 @@
 ---
 title: "Assignment 1"
+author: "Yahya Eren Kaya"
+date: "2026-03-10"
 ---
 
 
@@ -22,6 +24,9 @@ c) Predictive Analytics
 d) Prescriptive Analytics
 
 **Answer:** C
+
+---
+**Code Task**
 
 ```{r}
 library(dslabs)
